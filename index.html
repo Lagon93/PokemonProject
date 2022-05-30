@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
+		<title>Pokeslot</title>
+		<script type="text/javascript" src="js/Game.js">
+			//<!-- BUG DE NAVEGADORES CON SCRIPT VACÍOS -->
+		</script>
+		<link rel="stylesheet" type="text/css" href="css/Game.css"/>
+		<script src="https://kit.fontawesome.com/64b828a05f.js" crossorigin="anonymous"></script>
+		<link rel="icon" href="resources/favicon.png">
+	</head>
+
+	<body class="Generacion1" onload="window.machine = new Machine();">
+		<audio id="prize" src="resources/coinsplash.ogg"></audio>
+		<audio id="lever" src="resources/healing-pokemon-sound_QZ2KNpNx.mp3"></audio>
+		<audio id="advance0" src="resources/boton.mp3"></audio>
+		<audio id="advance1" src="resources/boton.mp3"></audio>
+		<audio id="advance2" src="resources/boton.mp3"></audio>
+		<audio id="advance3" src="resources/boton.mp3"></audio>
+		<audio id="advance4" src="resources/boton.mp3"></audio>
+		<audio id="advance5" src="resources/boton.mp3"></audio>
+		<audio id="advance6" src="resources/boton.mp3"></audio>
+		<audio id="advance7" src="resources/boton.mp3"></audio>
+		<audio id="advance8" src="resources/boton.mp3"></audio>
+		<audio id="advance9" src="resources/boton.mp3"></audio>
+		<audio id="advance10" src="resources/boton.mp3"></audio>
+		<audio id="advance11" src="resources/boton.mp3"></audio>
+		<audio id="advance12" src="resources/boton.mp3"></audio>
+		<audio id="advance13" src="resources/boton.mp3"></audio>
+		<audio id="advance14" src="resources/boton.mp3"></audio>
+		<audio id="advance15" src="resources/boton.mp3"></audio>
+		<audio id="advance16" src="resources/boton.mp3"></audio>
+		<audio id="advance17" src="resources/boton.mp3"></audio>
+		<audio id="advance18" src="resources/boton.mp3"></audio>
+		<audio id="advance19" src="resources/boton.mp3"></audio>
+		<audio id="advance20" src="resources/boton.mp3"></audio>
+		<audio id="stop1" src="resources/pokemon-exclamation-mark-sound-effect.mp3"></audio>
+		<audio id="stop2" src="resources/pokemon-exclamation-mark-sound-effect.mp3"></audio>
+		<audio id="stop3" src="resources/pokemon-exclamation-mark-sound-effect.mp3"></audio>
+		<div id="Titulo"><img src="resources/pokeslot.png" alt="PokeSlot"/></div>
+		<div id="Container">
+			<div id=monedas>FICHAS 000<span id="coinsCount"></span></div>
+			<button class="throw" onclick="machine.throw();"></button>
+			  <!-- Nuestro botón. En el ejemplo uso Font-awesome para mostrar un icono de barras -->
+			<button class="botonMenu">
+				<i class="fa fa-bars"></i>
+			</button>
+			<!-- Los links -->
+			<nav class="principal">
+				<ul>
+					<li style="grid-column: 1" onclick="window.machine = new Machine();"><a href="#"><img src="resources/reset.png">Reset</a></li>
+					<li style="grid-column: 1" onclick="window.machine = new Machine();"><a href="#"><img src="resources/background.png">Background</a></li>
+					<span>____________________</span>
+					<li style="grid-column: 1" onclick="ChangeMachine('Generacion1');"><a href="#"><img src="resources/Rojo_mini_RA.webp">Generacion 1</a></li>
+					<li style="grid-column: 1" onclick="ChangeMachine('Generacion2');"><a href="#"><img src="resources/Rojo_Mini_OPC.webp">Generacion 2</a></li>
+					<li style="grid-column: 1" onclick="ChangeMachine('Generacion3');"><a href="#"><img src="resources/Rojo_mini_RFVH.webp">Generacion 3</a></li>
+				</ul>
+			</nav>
+			
+
+			<div class="ruleta pos1"></div>
+			<div class="ruleta pos2"></div>
+			<div class="ruleta pos3"></div>
+			<br/>
+			<button class="advance pos1" id="uno1" onclick="machine.advance(1);"></button>
+			<button class="advance pos2"  onclick="machine.advance(2);"></button>
+			<button class="advance pos3" id="uno2"onclick="machine.advance(3);"></button>
+			<br/>
+		</div>
+	</body>
+</html>
+

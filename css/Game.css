@@ -1,0 +1,292 @@
+@font-face {
+    font-family: "Led Panel Station Off";
+    src: url(resources/Led\ Panel\ Station\ Off.ttf);
+}
+
+html, body {
+	margin: 0 !important;
+	padding: 0 !important;
+	overflow: hidden !important;
+	border: 0 none transparent !important;
+	outline: 0 none transparent !important;
+	width: 100vw !important;
+	height: 100vh !important;
+}
+body {
+	display: grid;
+	justify-content: center;
+	align-content: stretch;
+	align-items: center;
+}
+#Titulo {
+	text-align: center;
+}
+#Container, #Container * {
+	box-sizing: border-box;
+	/*margin: 0;*/
+	padding: 0;
+}
+#Container {
+	width: 50rem;
+	height: 40rem;
+	line-height: 1rem;
+	text-align: center;
+    border-width: 10px;
+    border-color: #7c5313;
+    border-style: outset;
+    border-radius: 1rem;
+	padding-top: 2rem;
+	background-color: rgb(30, 172, 172);
+	box-shadow: 3px 3px 5px 0px;
+}
+
+#Container button.throw {
+	transition: transform .5s ease-in-out;
+    cursor:pointer;
+    user-select:none;
+    -moz-user-select:none;
+    width:180px;
+    height:180px;
+    border-radius:50%;
+    border:6px solid rgb(40, 73, 134);
+    box-shadow:0 0 13px black inset;
+    position:absolute;
+    left:0;
+    right:0;
+    margin:auto;
+    box-sizing:border-box;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-image: url("../resources/pokeball.png");
+  }
+
+  #Container button.throw:hover{
+	background-image: url("../resources/pokeball.png");
+    background-color:white;
+    box-shadow:0 0 13px rgb(40, 73, 134);
+    transform: rotate(360deg)
+    
+  }
+
+  #Container button.throw image{
+
+    width:180px;
+    height:180px;
+
+  }
+
+#Container button.advance {
+	width: 6rem;
+	height: 6rem;
+	margin-right: 0.5rem;
+    margin-left: 0.5rem;
+}
+#uno1{
+	padding-right: 6.5rem;
+}
+#uno2 {
+    padding-left: 7rem;
+}
+
+#Container pos1 {
+	left: 1rem;
+}
+
+#Container pos2 {
+	left: 3rem;
+}
+
+#Container pos3 {
+	left: 5 rem;
+}
+
+#Container .ruleta {
+	display: inline-block;
+	width: 6.5rem;
+	height: 18rem;
+	border: 1px solid black;
+	background-image: url('../resources/ruleta.jpg');
+	background-size: 12rem 36rem;
+	background-position-x: 0rem;
+	background-position-y: 6rem;
+	margin-top: 9rem;
+	margin-right:1rem;
+	box-shadow: inset 0 -15px 15px 0px, inset 0 15px 15px 0px;
+	border-block: initial;
+	margin-right: 0.5rem;
+    margin-left: 0.5rem;
+    border-color: darkred;
+    border-style: outset;
+    border-width: thick;
+    border-radius: 7px;
+
+}
+#Container .ruleta:after {
+	content: ' ';
+	display: inline-block;
+	box-sizing: border-box;
+	width: 6rem;
+	height: 6rem;
+	position: relative;
+	top: 6rem;
+	left: -1px;
+	border: 3px solid red;
+	border-style: outset;
+	border-radius: 7px;
+	margin-bottom: 1px;
+}
+
+#Container .anim {
+	animation-name: ruedaRuleta;
+	animation-duration: 1s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+	background-position-x: 6rem;
+}
+#coinsCount{
+	color:orange;
+    background-color: black;
+    font-family: "Led Panel Station Off";
+
+}
+
+#monedas{
+	color:orange;
+    font-size:1.4em;
+    background-color: black;
+    font-family: "Led Panel Station Off";
+	margin-top: 5rem;
+	margin-left: 5rem;
+	padding:4px;
+	position: absolute;
+	border-style: outset;
+}
+
+@keyframes ruedaRuleta {
+	from {
+		background-position-y: 0rem;
+	}
+	to {
+		background-position-y: 180rem;
+	}
+}
+
+body.Generacion3 {
+	background-image: url('../resources/arena.png');
+	background-repeat: repeat;
+	background-position: 0vw 0vh;
+	
+}
+body button.advance {
+	background-color: transparent;
+	border: 0px none transparent;
+	outline: 0px none transparent;
+	background-image: url('../resources/advance_lagon93.png');
+	background-size: 6rem 24rem;
+	background-repeat: no-repeat;
+	background-position-x: 0rem;
+	background-position-y: 0rem;
+}
+body.Generacion1 button.advance:hover {
+	background-position-y: -6rem;
+}
+body.Generacion1 button.advance:active {
+	background-position-y: -12rem;
+}
+body.Generacion1 button.advance:disabled {
+	background-position-y: -18rem !important;
+}
+body.Generacion1 #Container .ruleta {
+	background-image: url('../resources/slots_lagon93.jpg');
+	background-size: 12em 42em;
+}
+
+body.Generacion2 {
+	background-image: url('../resources/nieve.png');
+	background-repeat: repeat;
+	background-position: 0vw 0vh;
+}
+
+body.Generacion1 {
+	background-image: url('../resources/hierba.png');
+	background-repeat: repeat;
+	background-position: 0vw 0vh;
+	
+}
+
+/* Boton de menu */
+.botonMenu {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    width: 3rem;    
+    height: 3rem;
+    position: relative;
+    top: 1rem;
+    right: 1rem;
+	margin-left: 43rem;
+    border: 0;
+    color: white;
+    cursor: pointer;
+	border-radius: 0.5rem;
+	border-width: 5px;
+    border-color: #7c5313;
+    border-style: outset;
+	background-color: rgb(30, 172, 172);
+	box-shadow: 3px 3px 5px 0px black;
+}
+.botonMenu:hover {
+	background-color: rgb(101, 194, 194);
+}
+/* Se le quita el borde azul cuando se pulsa en Chrome */
+.botonMenu:focus {
+    outline: none;
+	
+}
+/* Cuando es pulsado, se quita el translate que lo ocultaba */
+.botonMenu:focus + .principal {
+    transform: translateX(0rem);
+}
+/* Se posiciona y se oculta con translate */
+nav.principal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 15rem;
+	border-width: 10px;
+    border-color: #7c5313;
+    border-style: outset;
+    border-radius: 1rem;
+	padding-top: 2rem;
+	background-color: rgb(30, 172, 172);
+	box-shadow: 3px 3px 5px 0px;
+    transform: translateX(15rem);
+    transition: 1s all;
+}
+/* Estilos sencillos para decorar los links */
+nav.principal ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+	text-size-adjust: 20px;
+	
+}
+nav.principal a {
+    display: flex;
+    color: #ffffff;
+    padding: 1rem;
+    transition: .5s all;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: large;
+	line-height: 3rem;
+	align-content: stretch;
+    align-items: center;
+    justify-content: center;
+	
+}
+nav.principal a:hover {
+    text-decoration: none;
+    background-color: #4f9ccf;
+}
