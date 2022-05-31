@@ -1,4 +1,7 @@
-@font-face{ font-family: 'MyWebFont'; src: url('WebFont.eot'); src: url('WebFont.eot?#iefix') format('embedded-opentype'), url('WebFont.woff') format('woff'), url('WebFont.ttf') format('truetype'), url('WebFont.svg#webfont') format('svg'); }
+@font-face {
+    font-family: "Led Panel Station Off";
+    src: url(../resources/Led\ Panel\ Station\ Off.ttf);
+}
 
 html, body {
 	margin: 0 !important;
