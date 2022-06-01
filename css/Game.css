@@ -202,6 +202,16 @@ body.Generacion1 #Container .ruleta {
 	background-size: 12em 42em;
 }
 
+body.Generacion2 #Container .ruleta {
+	background-image: url('../resources/slots_2gen.jpg');
+	background-size: 12em 42em;
+}
+
+body.Generacion3 #Container .ruleta {
+	background-image: url('../resources/slots_3gen.jpg');
+	background-size: 12em 42em;
+}
+
 body.Generacion2 {
 	background-image: url('../resources/nieve.png');
 	background-repeat: repeat;

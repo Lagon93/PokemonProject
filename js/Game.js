@@ -15,7 +15,7 @@ function GameStats () {
 			{name:'Trío Cubone', coins: 2},
 			{name:'Trio Magikarp', coins: 30},
 			{name:'Trío Pikachu', coins: 6},
-			{name:'Trío Squirtle', coins: 6},
+			{name:'Trío Squirtle', coins: 15},
 	];
 }
 GameStats.prototype.isWinner = function () {
@@ -195,45 +195,44 @@ function ChangeMachine(newType) {
 				{name:'Trío Pikachu', coins: 2},
 				{name:'Trio Magikarp', coins: 30},
 				{name:'Trío Squirtle', coins: 6},
-				{name:'Trío Cubone', coins: 6},
+				{name:'Trío Abra', coins: 15},
 			];
 			break;
 		case 'Generacion2':
 			machine.stats.tiles.count = 7;
 			machine.stats.prizes =  [
-				{name:'Trío Bulbasur', coins: 3},
-				{name:'Trío Charmander', coins: 7},
-				{name:'Trío Cubone', coins: 10},
-				{name:'Trío Magikarp', coins: 2},
-				{name:'Trio Pikachu', coins: 30},
-				{name:'Trío Squirtle', coins: 6},
-				{name:'Trío Cubone', coins: 6},
-			];
+				{name:'Trío Cyndaquil', coins: 3},
+				{name:'Trío Mareep', coins: 7},
+				{name:'Trío Tedyursa', coins: 10},
+				{name:'Trío Totodile', coins: 2},
+				{name:'Trio Togepi', coins: 30},
+				{name:'Trío Chikorita', coins: 6},
+				{name:'Trío Delibird', coins: 15},
+				];
 			break;
 		case 'Generacion3':
 			machine.stats.tiles.count = 7;
 			machine.stats.prizes =  [
-				{name:'Trío de Patos', coins: 4},
-				{name:'Autentico pato de Oro', coins: 30},
-				{name:'Pato Real', coins: 20},
-				{name:'Fuerte Pato', coins: 12},
-				{name:'Pato Cabreado', coins: 3},
-				{name:'PatoDescanso', coins: 10},
-				{name:'Patito Juan', coins: 8},
+				{name:'Mudkip', coins: 3},
+				{name:'Torchic', coins: 7},
+				{name:'Altaria', coins: 10},
+				{name:'Sableye', coins: 2},
+				{name:'Duskull', coins: 30},
+				{name:'Treecko', coins: 6},
+				{name:'Waylord', coins: 15},
 			];
 			break;
 		default:
-			machine.stats.tiles.count = 7;
-			machine.stats.prizes =  [
-				{name:'Trío Bulbasur', coins: 3},
-				{name:'Trío Charmander', coins: 7},
-				{name:'Trío Cubone', coins: 10},
-				{name:'Trío Magikarp', coins: 2},
-				{name:'Trio Pikachu', coins: 30},
-				{name:'Trío Squirtle', coins: 6},
-				{name:'Trío Cubone', coins: 6},
-			];
-			break;
+				machine.stats.tiles.count = 7;
+				machine.stats.prizes =  [
+					{name:'Trío Bulbasur', coins: 3},
+					{name:'Trío Charmander', coins: 7},
+					{name:'Trío Cubone', coins: 10},
+					{name:'Trío Pikachu', coins: 2},
+					{name:'Trio Magikarp', coins: 30},
+					{name:'Trío Squirtle', coins: 6},
+					{name:'Trío Abra', coins: 15},
+				];
 	}
 }
 /*revisar*/
