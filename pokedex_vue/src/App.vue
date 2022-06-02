@@ -1,5 +1,5 @@
 <script>
-import {pokeapi} from "@/api/pokeapi";
+import {pokeapi} from "pokedex_vue/src/api/pokeapi.js";
 
 export default{
   name: 'App',
