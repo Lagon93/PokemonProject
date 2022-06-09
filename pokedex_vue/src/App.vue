@@ -1,5 +1,5 @@
 <script>
-import {pokeapi} from "@h/api/pokeapi";
+import {pokeapi} from "@/api/pokeapi";
 
 export default{
   name: 'App',

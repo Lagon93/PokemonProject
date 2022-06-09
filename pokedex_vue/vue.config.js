@@ -3,5 +3,7 @@ module.exports = defineConfig({
   transpileDependencies: true
 })
 module.exports = {
-  publicPath: ''
-  };
+  publicPath: process.env.NODE_ENV === 'production'
+    ? '/' + process.env.pokemonproject + '/'
+    : '/'
+}
